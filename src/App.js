@@ -1,10 +1,10 @@
-import "./App.css";
+import './App.css';
 
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import { Footer, Header, Terms } from "./components";
-import { About, Articles, Home, Products, Projects } from "./views";
+import { Footer, Header } from './components';
+import { About, Articles, Home, Products, Projects } from './views';
 
 function App() {
   return (
@@ -16,7 +16,6 @@ function App() {
         <Route path="/articles" component={Articles} />
         <Route path="/products" component={Products} />
         <Route path="/projects" component={Projects} />
-        <Terms />
         <Footer />
       </div>
     </Router>
