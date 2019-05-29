@@ -1,32 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "reactstrap";
 
 const Terms = () => {
-  
-  return (
-    <div
-      className="modal fade"
-      id="terms"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="termsModal"
-      aria-hidden="true"
-    >
-      <div className="modal-dialog" role="document">
-        <div className="modal-content">
-          <div className="modal-header">
-            <button
-              type="button"
-              className="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <h2 className="modal-title text-center" id="termsModal">
-              Terms and Conditions
-            </h2>
-          </div>
-          <div className="modal-body">
+  const [modal, setModal] = useState(false);
+  const toggle = () => {
+    setModal(!modal);
+  };
+
+  if (!modal) {
+    return <span onClick={toggle}>Terms and Conditions</span>;
+  } else {
+    return (
+      <div>
+      <span onClick={toggle}>Terms and Conditions</span>
+        <Modal toggle={toggle} isOpen={modal}>
+          <ModalHeader toggle={toggle}>Terms and Conditions</ModalHeader>
+          <ModalBody>
             <p>
               Operation
               <br />
@@ -121,20 +110,14 @@ const Terms = () => {
               <br />
               Last updated on August 8, 2018
             </p>
-          </div>
-          <div className="modal-footer">
-            <button
-              type="button"
-              className="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
+          </ModalBody>
+          <ModalFooter toggle={toggle}>
+            <Button onClick={toggle}>Close</Button>
+          </ModalFooter>
+        </Modal>
       </div>
-    </div>
-  );
+    );
+  }
 };
 
 export { Terms };
