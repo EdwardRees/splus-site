@@ -29,7 +29,7 @@ const About = () => {
                 style={{color: "#606060", fontSize: "25px", textAlign:"left", float: "left"}}
               >
                 <p>
-                  Your comfort and safety is our passion.  Especially in the home -
+                  Your comfort and safety is our passion.  Especially in the home -{" "}
                   <span style={{color: "#F79646"}}>your home</span>.  
                 </p>
     

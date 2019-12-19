@@ -55,7 +55,7 @@ const Articles = () => {
               </p>
 
               <p>
-                Act now, promote
+                Act now, promote{" "}
                 <span style={{ color: "#F79646" }}>‘safety culture’</span>.
               </p>
             </span>

@@ -24,7 +24,7 @@ const Footer = () => {
             }}
           >
             <span style={{ color: "#A6A6A6" }}>
-              Copyright 2018. All rights reserved
+              Copyright 2019. All rights reserved
             </span>
             <span style={{ color: "#F79646" }}> | </span>
             <Terms />

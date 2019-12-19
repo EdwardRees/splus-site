@@ -30,7 +30,7 @@ const Products = () => {
               <p>
                 S<sup style={{color: "#F79064"}}>+</sup> offer solutions to meet
                 your evolving independent living needs and add value to your
-                active lifestyle - services and installations for the{""}
+                active lifestyle - services and installations for the{" "}
                 <span style={{color: "#F79646"}}>home</span>
               </p>
             </span>

@@ -108,7 +108,7 @@ const Terms = () => {
               <br />
               <br />
               <br />
-              Last updated on August 8, 2018
+              Last updated on December 19, 2019
             </p>
           </ModalBody>
           <ModalFooter toggle={toggle}>
