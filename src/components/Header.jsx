@@ -28,6 +28,23 @@ const Header = () => {
             <span style={{ color: "#BFBFBF", fontSize: "25px" }}>......</span>
           </NavbarBrand>
           <NavbarToggler onClick={toggle} />
+          {/* <Collapse isOpen={isOpen} navbar>
+            <Nav className="mr-auto" navbar>
+              <NavItem>
+                <NavLink href="/">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/about">Interior Design Services</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/articles">Facility Management</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/products">Safe and Sustainable at Home</NavLink>
+              </NavItem>
+              
+            </Nav>
+          </Collapse> */}
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
