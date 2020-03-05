@@ -2,33 +2,14 @@ import "./App.css";
 
 import React, { Fragment } from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import { Logo } from "./components/";
+import { Header } from "./components/Header";
 
-import { Footer, Header } from "./components";
-import { About, Articles, Home, Products, Projects } from "./views";
-
-const Previous = () => {
-  return (
-    <Router>
-      <div>
-        <Header />
-        <Route path="/" component={Home} exact />
-        <Route path="/about" component={About} />
-        <Route path="/articles" component={Articles} />
-        <Route path="/products" component={Products} />
-        <Route path="/projects" component={Projects} />
-        <Footer />
-      </div>
-    </Router>
-  );
-};
-
-const SPlusLogo = () => {
+const Home = () => {
   return (
     <Fragment>
-      <span style={{ color: "#BFBFBF" }}>S</span>
-      <span style={{ color: " #F46100" }}>
-        <sup>+</sup>
-      </span>
+      <Header />
+      <InProgress />
     </Fragment>
   );
 };
@@ -45,8 +26,8 @@ const InProgress = () => {
         alignItems: "center"
       }}
     >
-      <h1>
-        The <SPlusLogo /> site is currently under renovation.
+      <h1 style={{fontWeight: 'bold'}}>
+        The <Logo WIP /> site is currently under renovation.
         <br />
         Please come back later!
       </h1>
@@ -54,29 +35,6 @@ const InProgress = () => {
   );
 };
 
-const RoutedInProgress = () => {
-  return (
-    <Router>
-    <Route path="/" component={InProgress} exact />
-      <div>
-      <Header />
-      <Switch>
-        <Route path="/home" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/articles" component={Articles} />
-        <Route path="/products" component={Products} />
-        <Route path="/projects" component={Projects} />
-        </Switch>
-        <Footer />
-        </div>
-    </Router>
-  );
-};
-
-const App = () => {
-  // return <RoutedInProgress />;
-  // return <InProgress />;
-  return <Previous />;
-};
+const App = () => <Home />;
 
 export default App;
