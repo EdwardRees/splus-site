@@ -4,16 +4,16 @@ import { TemplateCenter } from "../TemplateCenter";
 const CentralInfo = ({ leftImage, rightImage, children, debug }) => {
   return (
     <div className="text-center row  no-gutters" style={{ flex: 1 }}>
-      <div className="col">
+      <div className="col-md">
         <img src={leftImage} 
         style={{maxWidth: "100%", height: "auto"}}
         
         />
       </div>
-      <div className="col text-center">
+      <div className="col-md text-center">
         <TemplateCenter specificHeight={"auto"}>{children}</TemplateCenter>
       </div>
-      <div className="col">
+      <div className="col-md">
         <img src={rightImage} 
         style={{maxWidth: "100%", height: "auto"}}
          />
