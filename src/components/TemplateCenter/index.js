@@ -1,8 +1,8 @@
 import React from 'react'
 
-const TemplateCenter = ({children}) => {
+const TemplateCenter = ({specificHeight, children}) => {
   return (
-    <div style={{backgroundColor: "#E7E6E6", borderLeft: "1px solid white", borderRight: "1px solid white", padding: 20, height: "100%"}}>
+    <div className="no-gutters container-fluid text-center" style={{backgroundColor: "#E7E6E6", borderLeft: "1px solid white", borderRight: "1px solid white", padding: 20, height: specificHeight === undefined ? "auto" : specificHeight}}>
       {children}
     </div>
   )

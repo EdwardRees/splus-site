@@ -8,9 +8,12 @@ import {
   LinkGroup
 } from "../../components/";
 
+const left = require("../../assets/us/left.png")
+const right = require("../../assets/us/right.png")
+
 const Us = () => {
   return (
-    <CentralInfo left="Hello" right="Bye">
+    <CentralInfo leftImage={left} rightImage={right}>
       <Heading name="US" />
       <Divider />
       <Description>

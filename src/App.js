@@ -27,7 +27,8 @@ const InProgress = () => {
 };
 
 const RoutedApp = () => (
-  <div style={{ display: 'flex', height: "100vh", flexDirection: 'column' }}>
+  // <div style={{ display: 'flex', height: "100vh", flexDirection: 'column' }}>
+  <div style={{display: 'flex', flexDirection: "column", height: "100vh"}}>
     <Router>
       <Route path="/" component={InProgress} exact />
       <Route path="/dev">
