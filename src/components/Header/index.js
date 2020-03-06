@@ -9,16 +9,17 @@ const Header = () => {
       style={{
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
         backgroundColor: "#404040",
         width: "100%",
-        paddingTop: 10,
-        paddingBottom: 10,
-        flex: 1
+        paddingTop: 5,
+        paddingBottom: 5,
       }}
     >
-      <FaBars color="#F79646" size="3rem" style={{ display: 'flex', alignItems: 'center', verticalAlign: 'middle', marginTop: 5 }} />
-      <Logo size={2.5} />
+      <div style={{display: 'flex', alignItems: 'center', paddingLeft: 10}}>
+        <FaBars color="#F79646" size="2rem"/>
+      </div>
+      <Logo size={2} />
       <div />
     </div>
   );

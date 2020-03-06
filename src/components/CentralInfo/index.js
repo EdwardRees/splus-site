@@ -3,12 +3,20 @@ import { TemplateCenter } from "../TemplateCenter";
 
 const CentralInfo = ({ left, right, children }) => {
   return (
-    <div className="row text-center">
-      <div className="col">{left}</div>
-      <div className="col-3">
+    <div
+      className="container text-center"
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        flex: 1
+      }}
+    >
+      <div style={{ flex: 1 }}>{left}</div>
+      <div style={{ flex: 1 }}>
         <TemplateCenter>{children}</TemplateCenter>
       </div>
-      <div className="col">{right}</div>
+      <div style={{ flex: 1 }}>{right}</div>
     </div>
   );
 };

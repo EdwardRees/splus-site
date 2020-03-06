@@ -2,19 +2,8 @@ import "./App.css";
 
 import React, { Fragment } from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
-import { Logo } from "./components/";
-import { Header } from "./components/Header";
+import { Logo, Header, Footer } from "./components/";
 import { Us } from "./views";
-
-const Home = () => {
-  return (
-    <Fragment>
-      <Header />
-      <Us />
-      {/*<InProgress />*/}
-    </Fragment>
-  );
-};
 
 const InProgress = () => {
   return (
@@ -38,15 +27,18 @@ const InProgress = () => {
 };
 
 const RoutedApp = () => (
-  <Router>
-    <Route path="/" component={InProgress} exact />
-    <Route path="/dev">
-      <Fragment>
+  <div style={{ display: 'flex', height: "100vh", flexDirection: 'column' }}>
+    <Router>
+      <Route path="/" component={InProgress} exact />
+      <Route path="/dev">
         <Header />
-        <Route path="/dev/us" component={Us} />
-      </Fragment>
-    </Route>
-  </Router>
+        <Switch>
+          <Route path="/dev/us" component={Us} />
+        </Switch>
+        <Footer />
+      </Route>
+    </Router>
+  </div>
 );
 
 const App = () => <RoutedApp />;
