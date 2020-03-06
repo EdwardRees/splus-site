@@ -4,7 +4,7 @@ import React, { Fragment } from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import { Logo } from "./components/";
 import { Header } from "./components/Header";
-import { Us } from './views';
+import { Us } from "./views";
 
 const Home = () => {
   return (
@@ -28,7 +28,7 @@ const InProgress = () => {
         alignItems: "center"
       }}
     >
-      <h1 style={{fontWeight: 'bold'}}>
+      <h1 style={{ fontWeight: "bold" }}>
         The <Logo WIP /> site is currently under renovation.
         <br />
         Please come back later!
@@ -37,6 +37,18 @@ const InProgress = () => {
   );
 };
 
-const App = () => <Home />;
+const RoutedApp = () => (
+  <Router>
+    <Route path="/" component={InProgress} exact />
+    <Route path="/dev">
+      <Fragment>
+        <Header />
+        <Route path="/dev/us" component={Us} />
+      </Fragment>
+    </Route>
+  </Router>
+);
+
+const App = () => <RoutedApp />;
 
 export default App;
