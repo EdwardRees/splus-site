@@ -4,12 +4,14 @@ import React, { Fragment } from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import { Logo } from "./components/";
 import { Header } from "./components/Header";
+import { Us } from './views';
 
 const Home = () => {
   return (
     <Fragment>
       <Header />
-      <InProgress />
+      <Us />
+      {/*<InProgress />*/}
     </Fragment>
   );
 };

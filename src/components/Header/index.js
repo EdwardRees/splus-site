@@ -1,5 +1,6 @@
 import React from "react";
 import { MdMenu } from "react-icons/md";
+import { FaBars } from "react-icons/fa";
 import { Logo } from "../../components";
 
 const Header = () => {
@@ -16,8 +17,8 @@ const Header = () => {
         flex: 1
       }}
     >
-      <MdMenu color="#F79646" size="3em" style={{ verticalAlign: "center" }} />
-      <Logo size={2} />
+      <FaBars color="#F79646" size="3rem" style={{ display: 'flex', alignItems: 'center', verticalAlign: 'middle', marginTop: 5 }} />
+      <Logo size={2.5} />
       <div />
     </div>
   );
