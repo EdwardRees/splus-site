@@ -1,15 +1,15 @@
 import React from "react";
-import { CentralInfo } from "../../components";
 import {
-  Heading,
-  Divider,
   Description,
+  Divider,
+  Heading,
   Link,
-  LinkGroup
+  LinkGroup,
+  CentralInfo
 } from "../../components/";
 
-const left = require("../../assets/us/left.png")
-const right = require("../../assets/us/right.png")
+const left = require("../../assets/us/left.png");
+const right = require("../../assets/us/right.png");
 
 const Us = () => {
   return (

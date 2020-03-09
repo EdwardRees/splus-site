@@ -1,5 +1,12 @@
 # ToDo List
 
+## March 8
+
+- Safari Font Fix
+- Image bottom padding / margins for background for template / US
+
+## January
+
 Home -> About Us
 Home Page needs to change
 	- Services provided

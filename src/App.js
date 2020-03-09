@@ -3,7 +3,7 @@ import "./App.css";
 import React, { Fragment } from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
 import { Logo, Header, Footer } from "./components/";
-import { Us } from "./views";
+import { Us, Design, FacilityManagement, ActiveSeniorLiving, Lifestyle, Enquiry } from "./views";
 
 const InProgress = () => {
   return (
@@ -35,6 +35,11 @@ const RoutedApp = () => (
         <Header />
         <Switch>
           <Route path="/dev/us" component={Us} />
+          <Route path="/dev/wip/design" component={Design} />
+          <Route path="/dev/wip/facilitymanagement" component={FacilityManagement} />
+          <Route path="/dev/wip/activeseniorliving" component={ActiveSeniorLiving} />
+          <Route path="/dev/wip/lifestyle" component={Lifestyle} />
+          <Route path="/dev/wip/enquiry" component={Enquiry} />
         </Switch>
         <Footer />
       </Route>
