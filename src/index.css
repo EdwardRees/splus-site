@@ -19,3 +19,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: "Corbel";
+  src: local("Corbel"), url("./fonts/corbel/CORBEL.TTF") format('truetype')
+}
+
+@font-face {
+  font-family: "Corbel";
+  font-weight: 900;
+  src: local("Corbel"), url("./fonts/corbel/Corbel Bold.ttf") format('truetype')
+}
