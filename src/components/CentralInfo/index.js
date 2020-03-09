@@ -10,7 +10,7 @@ const CentralInfo = ({ leftImage, rightImage, children, debug }) => {
         
         />
       </div>
-      <div className="col-md text-center">
+      <div className="col-md-3 text-center">
         <TemplateCenter specificHeight={"auto"}>{children}</TemplateCenter>
       </div>
       <div className="col-md">
