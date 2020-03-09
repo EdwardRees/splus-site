@@ -1,8 +1,8 @@
 import React from 'react'
 import { Error404 } from '../Error404'
 
-const FacilityManagement = () => (
+const FacilitiesManagement = () => (
   <Error404 name="Facilities management" />
 )
 
-export { FacilityManagement };
+export { FacilitiesManagement };
