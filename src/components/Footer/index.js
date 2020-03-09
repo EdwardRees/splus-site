@@ -17,7 +17,7 @@ const getYear = () => {
 const Footer = () => (
   <div
     className="text-center footer"
-    style={{ display: "flex", flexDirection: "column", paddingTop: 10, paddingBottom: 10, fontFamily: "Corbel" }}
+    style={{ display: "flex", flexDirection: "column", paddingTop: 10, paddingBottom: 10, fontFamily: "Corbel", position: 'fixed', bottom: 0, left: 0, width: "100%", backgroundColor: "white" }}
   >
     <div>
       <span style={{ color: "#606060", fontWeight: "bold", fontFamily: "Corbel" }}>S Plus</span>{" "}

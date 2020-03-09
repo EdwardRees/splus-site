@@ -2,8 +2,8 @@
 
 ## March 8
 
-- Safari Font Fix
 - Image bottom padding / margins for background for template / US
+- Overlap of central area for US when resized
 
 ## January
 
