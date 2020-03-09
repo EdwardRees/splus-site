@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   Description,
   Divider,
@@ -11,7 +11,8 @@ import {
 const left = require("../../assets/us/left.png");
 const right = require("../../assets/us/right.png");
 
-const Us = () => {
+const Us = ({wip = false}) => {
+  useEffect(() => console.log(wip))
   return (
     <CentralInfo leftImage={left} rightImage={right}>
     <div style={{paddingTop: "1vh", paddingBottom: "3vh"}}>
@@ -31,11 +32,11 @@ const Us = () => {
         </Description>
         <Divider />
         <LinkGroup>
-          <Link to="#">design</Link>
-          <Link to="#">facility management</Link>
-          <Link to="#">active senior living</Link>
-          <Link to="#">lifestyle</Link>
-          <Link to="#">enquiry</Link>
+          <Link to={wip ? "/dev/wip/design" : "#"}>design</Link>
+          <Link to={wip ? "/dev/wip/facilities-management" : "#"}>facility management</Link>
+          <Link to={wip ? "/dev/wip/active-senior-living" :"#"}>active senior living</Link>
+          <Link to={wip ? "/dev/wip/lifestyle" :"#"}>lifestyle</Link>
+          <Link to={wip ? "/dev/wip/enquiry" :"#"}>enquiry</Link>
         </LinkGroup>
     </div>
     </CentralInfo>

@@ -48,6 +48,9 @@ const RoutedApp = () => (
         <Header />
         <Switch>
           <Route path="/dev/us" exact component={Us} />
+          <Route path="/dev/wip/us" exact>
+            <Us wip={true} />
+          </Route>
           <Route path="/dev/wip/design" exact component={Design} />
           <Route
             path="/dev/wip/facilities-management"
