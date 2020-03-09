@@ -8,6 +8,7 @@ const Header = () => {
   return (
     <div
       style={{
+
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",

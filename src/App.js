@@ -41,33 +41,36 @@ const InProgress = () => {
 
 const RoutedApp = () => (
   // <div style={{ display: 'flex', height: "100vh", flexDirection: 'column' }}>
-  <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+  <div style={{ display: "flex", flexDirection: "column", minHeight: "100%" }}>
     <Router>
       <Route path="/" component={InProgress} exact />
       <Route path="/dev">
         <Header />
-        <Switch>
-          <Route path="/dev/us" exact component={Us} />
-          <Route path="/dev/wip/us" exact>
-            <Us wip={true} />
-          </Route>
-          <Route path="/dev/wip/design" exact component={Design} />
-          <Route
-            path="/dev/wip/facilities-management"
-            component={FacilitiesManagement}
-            exact
-          />
-          <Route
-            path="/dev/wip/active-senior-living"
-            exact
-            component={ActiveSeniorLiving}
-          />
-          <Route path="/dev/wip/lifestyle" exact component={Lifestyle} />
-          <Route path="/dev/wip/enquiry" exact component={Enquiry} />
-          <Route>
-            <Error404 name="404 Not Found" />
-          </Route>
-        </Switch>
+
+        <div style={{}}>
+          <Switch>
+            <Route path="/dev/us" exact component={Us} />
+            <Route path="/dev/wip/us" exact>
+              <Us wip={true} />
+            </Route>
+            <Route path="/dev/wip/design" exact component={Design} />
+            <Route
+              path="/dev/wip/facilities-management"
+              component={FacilitiesManagement}
+              exact
+            />
+            <Route
+              path="/dev/wip/active-senior-living"
+              exact
+              component={ActiveSeniorLiving}
+            />
+            <Route path="/dev/wip/lifestyle" exact component={Lifestyle} />
+            <Route path="/dev/wip/enquiry" exact component={Enquiry} />
+            <Route>
+              <Error404 name="404 Not Found" />
+            </Route>
+          </Switch>
+        </div>
         <Footer />
       </Route>
     </Router>

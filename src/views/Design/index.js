@@ -14,7 +14,7 @@ const right = require("../../assets/us/right.png");
 const Design = () => {
   return (
     <CentralInfo leftImage={left} rightImage={right}>
-      <div style={{ paddingTop: 0, marginBottom: 20 }}>
+      <div style={{ paddingTop: 0, marginBottom: 0 }}>
         <Heading name="DESIGN" />
         <Divider />
         <Description>
