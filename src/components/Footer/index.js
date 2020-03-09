@@ -9,6 +9,11 @@ const Text = ({ children }) => (
   <span style={{ fontWeight: "300", color: "#606060", fontFamily: "Corbel" }}>{children}</span>
 );
 
+
+const getYear = () => {
+  let date = new Date();
+  return date.getFullYear();
+}
 const Footer = () => (
   <div
     className="text-center footer"
@@ -19,7 +24,7 @@ const Footer = () => (
       <span style={{ color: "#bfbfbf", fontFamily: "Corbel" }}>Group Limited</span>
     </div>
     <div>
-      <Text>copyright 2020</Text>
+      <Text>copyright {getYear()}</Text>
       <Divider />
       <Text>all rights reserved</Text>
       <Divider />
