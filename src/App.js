@@ -1,7 +1,12 @@
 import "./App.css";
 
 import React, { Fragment } from "react";
-import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import {
+  Switch,
+  Redirect,
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
 import { Logo, Header, Footer } from "./components/";
 import {
   Us,
@@ -42,22 +47,24 @@ const RoutedApp = () => (
       <Route path="/dev">
         <Header />
         <Switch>
-          <Route path="/dev/us" component={Us} />
-          <Route path="/dev/wip/design" component={Design} />
+          <Route path="/dev/us" exact component={Us} />
+          <Route path="/dev/wip/design" exact component={Design} />
           <Route
             path="/dev/wip/facilities-management"
             component={FacilitiesManagement}
+            exact
           />
           <Route
             path="/dev/wip/active-senior-living"
+            exact
             component={ActiveSeniorLiving}
           />
-          <Route path="/dev/wip/lifestyle" component={Lifestyle} />
-          <Route path="/dev/wip/enquiry" component={Enquiry} />
+          <Route path="/dev/wip/lifestyle" exact component={Lifestyle} />
+          <Route path="/dev/wip/enquiry" exact component={Enquiry} />
+          <Route>
+            <Error404 name="404 Not Found" />
+          </Route>
         </Switch>
-        <Route>
-          <Error404 name="Not Found" />
-        </Route>
         <Footer />
       </Route>
     </Router>
