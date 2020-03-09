@@ -19,7 +19,7 @@ const getYear = () => {
 };
 const Footer = () => (
   <div
-    className="text-center footer"
+    className="text-center"
     style={{
       display: "flex",
       flexDirection: "column",
