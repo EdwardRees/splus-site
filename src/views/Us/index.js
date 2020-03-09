@@ -17,13 +17,13 @@ const Us = () => {
       <Heading name="US" />
       <Divider />
       <Description>
-        <p>We are committed to delivering solutions for better living</p>
+        <p>we are committed to delivering solutions for better living</p>
         <p>
-          We run collaborative projects to help you get there and enjoy the
+          we run collaborative projects to help you get there and enjoy the
           benefit of your ideas and desires
         </p>
         <p>
-          Our clients include developers, corporates, entrepreneurs, retailers,
+          our clients include developers, corporates, entrepreneurs, retailers,
           and individuals
         </p>
       </Description>

@@ -1,21 +1,22 @@
 import React from "react";
 
+
 const Divider = () => (
-  <span style={{ fontWeight: "bold", color: "#f79646" }}> | </span>
+  <span style={{ fontWeight: "bold", color: "#f79646", fontFamily: "Corbel" }}> &nbsp;&nbsp;|&nbsp;&nbsp;</span>
 );
 
 const Text = ({ children }) => (
-  <span style={{ fontWeight: "300", color: "#606060" }}>{children}</span>
+  <span style={{ fontWeight: "300", color: "#606060", fontFamily: "Corbel" }}>{children}</span>
 );
 
 const Footer = () => (
   <div
-    className="text-center"
-    style={{ display: "flex", flexDirection: "column", paddingTop: 10, paddingBottom: 10, }}
+    className="text-center footer"
+    style={{ display: "flex", flexDirection: "column", paddingTop: 10, paddingBottom: 10, fontFamily: "Corbel" }}
   >
     <div>
-      <span style={{ color: "#606060", fontWeight: "bold" }}>S Plus</span>{" "}
-      <span style={{ color: "#bfbfbf" }}>Group Limited</span>
+      <span style={{ color: "#606060", fontWeight: "bold", fontFamily: "Corbel" }}>S Plus</span>{" "}
+      <span style={{ color: "#bfbfbf", fontFamily: "Corbel" }}>Group Limited</span>
     </div>
     <div>
       <Text>copyright 2020</Text>
