@@ -2,8 +2,6 @@
 
 ## March 8
 
-- Image bottom padding / margins for background for template / US
-- Overlap of central area for US when resized
 - Include hidden access to original site
 
 ## January
@@ -29,4 +27,3 @@ IDS:
 	- Different Projects
 	- Panel?
     	- Drive to next page with descriptions
-

@@ -57,7 +57,6 @@ const InProgress = () => {
 const RoutedInProgress = () => {
   return (
     <Router>
-    <Route path="/" component={InProgress} exact />
       <div>
       <Header />
       <Switch>
@@ -75,8 +74,8 @@ const RoutedInProgress = () => {
 
 const App = () => {
   // return <RoutedInProgress />;
-  return <InProgress />;
-  // return <Previous />;
+  // return <InProgress />;
+  return <Previous />;
 };
 
 export default App;

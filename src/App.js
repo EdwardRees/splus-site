@@ -25,7 +25,7 @@ const InProgress = () => {
       style={{
         display: "flex",
         flex: 1,
-        height: window.innerHeight * 0.9,
+        minHeight: window.innerHeight,
         justifyContent: "center",
         alignItems: "center"
       }}

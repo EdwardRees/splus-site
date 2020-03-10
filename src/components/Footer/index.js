@@ -1,4 +1,5 @@
 import React from "react";
+import { Terms } from '../'
 
 const Divider = () => (
   <span style={{ fontWeight: "bold", color: "#f79646", fontFamily: "Corbel" }}>
@@ -26,7 +27,7 @@ const Footer = () => (
       paddingTop: '1rem',
       paddingBottom: '1rem',
       fontFamily: "Corbel",
-      backgroundColor: "white",
+      backgroundColor: "#ffffffff",
     }}
   >
     <div>
@@ -47,6 +48,7 @@ const Footer = () => (
       <Text>terms and conditions</Text>
     </div>
   </div>
+  // <Terms />
 );
 
 export { Footer };
