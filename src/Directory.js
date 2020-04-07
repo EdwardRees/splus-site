@@ -31,7 +31,6 @@ const Directory = () => (
       <Route path={`${HOME}`} component={InProgress} exact />
       <Route path="/dev">
         <Header />
-
         <div style={{}}>
           <Switch>
             <Route path={`/dev${US}`} exact component={Us} />
