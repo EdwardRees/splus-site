@@ -1,15 +1,6 @@
 import React from "react";
-import {
-  Description,
-  Divider,
-  Heading,
-  Link,
-  LinkGroup,
-  CentralInfo
-} from "../../components/";
-
-const left = require("../../assets/us/left.png");
-const right = require("../../assets/us/right.png");
+import { CentralInfo, Description, Divider, Heading, Link, LinkGroup } from "../../components/";
+import { PORTFOLIO } from '../../constants/routes'
 
 const background = require("../../assets/design/background.png");
 
@@ -51,7 +42,7 @@ const Design = () => {
         </Description>
         <Divider />
         <LinkGroup>
-          <Link to="/dev/portfolio">portfolio</Link>
+          <Link to={`/dev${PORTFOLIO}`}>portfolio</Link>
         </LinkGroup>
       </div>
     </CentralInfo>
@@ -59,3 +50,4 @@ const Design = () => {
 };
 
 export { Design };
+

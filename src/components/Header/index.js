@@ -1,13 +1,12 @@
 import React from "react";
-import { MdMenu } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
-import { Logo } from "../../components";
 import { NavLink } from "react-router-dom";
+import { Logo } from "../../components";
 
 const Header = () => {
   return (
     <div
-    className="sticky-top"
+      className="sticky-top"
       style={{
         display: "flex",
         flexDirection: "row",
@@ -15,7 +14,7 @@ const Header = () => {
         backgroundColor: "#404040",
         width: "100%",
         paddingTop: 5,
-        paddingBottom: 5
+        paddingBottom: 5,
       }}
     >
       <div style={{ display: "flex", alignItems: "center", paddingLeft: 10 }}>
@@ -30,3 +29,4 @@ const Header = () => {
 };
 
 export { Header };
+

@@ -1,35 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Logo, Footer, Header } from "./components/";
-import {
-  ActiveSeniorLiving,
-  ArtConsultancy,
-  Design,
-  Enquiry,
-  Error404,
-  FacilitiesManagement,
-  Lifestyle,
-  Portfolio,
-  Us,
-  FurnitureDesign,
-  InteriorDesign,
-  StylingAndFurnishing,
-} from "./views";
+import { Footer, Header, Logo } from "./components/";
+import { ACTIVE_SENIOR_LIVING, ART_CONSULTANCY, DESIGN, ENQUIRY, FACILITIES_MANAGEMENT, FURNITURE_DESIGN, HOME, LIFESTYLE, PORTFOLIO, STYLING_AND_FURNISHING, TERMS, US } from "./constants/routes";
+import { ActiveSeniorLiving, ArtConsultancy, Design, Enquiry, Error404, FacilitiesManagement, FurnitureDesign, Lifestyle, Portfolio, StylingAndFurnishing, Terms, Us } from "./views";
 
-import {
-  HOME,
-  US,
-  DESIGN,
-  FACILITIES_MANAGEMENT,
-  ACTIVE_SENIOR_LIVING,
-  LIFESTYLE,
-  ART_CONSULTANCY,
-  FURNITURE_DESIGN,
-  INTERIOR_DESIGN,
-  STYLING_AND_FURNISHING,
-  ENQUIRY,
-  PORTFOLIO,
-} from "./constants/routes";
 
 const InProgress = () => {
   return (
@@ -54,13 +28,13 @@ const InProgress = () => {
 const Directory = () => (
   <div style={{ display: "flex", flexDirection: "column", minHeight: "100%" }}>
     <Router>
-      <Route path="/" component={InProgress} exact />
+      <Route path={`${HOME}`} component={InProgress} exact />
       <Route path="/dev">
         <Header />
 
         <div style={{}}>
           <Switch>
-            <Route path={`/dev${US}`} exact component={Us}></Route>
+            <Route path={`/dev${US}`} exact component={Us} />
             <Route path={`/dev${DESIGN}`} exact component={Design} />
             <Route
               path={`/dev${FACILITIES_MANAGEMENT}`}
@@ -84,17 +58,13 @@ const Directory = () => (
               component={FurnitureDesign}
             />
             <Route
-              path={`/dev${INTERIOR_DESIGN}`}
-              exact
-              component={InteriorDesign}
-            />
-            <Route
               path={`/dev${STYLING_AND_FURNISHING}`}
               exact
               component={StylingAndFurnishing}
             />
             <Route path={`/dev${ENQUIRY}`} exact component={Enquiry} />
             <Route path={`/dev${PORTFOLIO}`} exact component={Portfolio} />
+            <Route path={`/dev${TERMS}`} exact component={Terms} />
             <Route>
               <Error404 name={`404 Not Found`} />
             </Route>
@@ -107,3 +77,4 @@ const Directory = () => (
 );
 
 export { Directory };
+

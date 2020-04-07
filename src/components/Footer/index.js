@@ -1,5 +1,4 @@
 import React from "react";
-import { Terms } from '../'
 
 const Divider = () => (
   <span style={{ fontWeight: "bold", color: "#f79646", fontFamily: "Corbel" }}>
@@ -52,3 +51,4 @@ const Footer = () => (
 );
 
 export { Footer };
+

@@ -1,12 +1,5 @@
-import React, { useEffect } from "react";
-import {
-  Description,
-  Divider,
-  Heading,
-  Link,
-  LinkGroup,
-  CentralInfo
-} from "../../components/";
+import React from "react";
+import { CentralInfo, Description, Divider, Heading, Link, LinkGroup } from "../../components/";
 
 const left = require("../../assets/us/left.png");
 const right = require("../../assets/us/right.png");
@@ -46,3 +39,4 @@ const Us = () => {
 };
 
 export { Us };
+

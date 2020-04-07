@@ -10,3 +10,4 @@ export const INTERIOR_DESIGN = "/portfolio";
 export const STYLING_AND_FURNISHING = "/lifestyle/styling-and-furnishing";
 export const ENQUIRY = "/enquiry";
 export const PORTFOLIO = "/portfolio";
+export const TERMS = "/terms";

@@ -1,15 +1,6 @@
 import React from "react";
-import {
-  Description,
-  Divider,
-  Heading,
-  Link,
-  LinkGroup,
-  CentralInfo
-} from "../../components/";
+import { CentralInfo, Description, Divider, Heading } from "../../components/";
 
-// const left = require("../../assets/us/left.png");
-// const right = require("../../assets/us/right.png");
 const background = require("../../assets/enquiry/background.png")
 
 const VerticalDivider = () => (
@@ -61,3 +52,4 @@ const Enquiry = () => {
 };
 
 export { Enquiry };
+

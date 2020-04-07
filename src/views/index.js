@@ -7,3 +7,4 @@ export * from './Lifestyle';
 export * from './Error404';
 export * from './Portfolio';
 export * from './LifestylePages'
+export * from './Terms';
