@@ -15,7 +15,9 @@ import {
   ActiveSeniorLiving,
   Lifestyle,
   Enquiry,
-  Error404
+  Error404,
+  ImagesSlideshow,
+  Portfolio
 } from "./views";
 
 const InProgress = () => {
@@ -49,23 +51,24 @@ const RoutedApp = () => (
 
         <div style={{}}>
           <Switch>
-            <Route path="/dev/us" exact component={Us} />
-            <Route path="/dev/wip/us" exact>
+            <Route path="/dev/us" exact>
               <Us wip={true} />
             </Route>
-            <Route path="/dev/wip/design" exact component={Design} />
+            <Route path="/dev/slide" exact component={ImagesSlideshow} />
+            <Route path="/dev/design" exact component={Design} />
             <Route
-              path="/dev/wip/facilities-management"
+              path="/dev/facilities-management"
               component={FacilitiesManagement}
               exact
             />
             <Route
-              path="/dev/wip/active-senior-living"
+              path="/dev/active-senior-living"
               exact
               component={ActiveSeniorLiving}
             />
-            <Route path="/dev/wip/lifestyle" exact component={Lifestyle} />
-            <Route path="/dev/wip/enquiry" exact component={Enquiry} />
+            <Route path="/dev/lifestyle" exact component={Lifestyle} />
+            <Route path="/dev/enquiry" exact component={Enquiry} />
+            <Route path="/dev/portfolio" exact component={Portfolio} />
             <Route>
               <Error404 name="404 Not Found" />
             </Route>

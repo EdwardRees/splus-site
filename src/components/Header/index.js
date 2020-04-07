@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div
+    className="sticky-top"
       style={{
-
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",

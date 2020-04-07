@@ -11,24 +11,22 @@ import {
 const left = require("../../assets/us/left.png");
 const right = require("../../assets/us/right.png");
 
+const background = require("../../assets/design/background.png");
+
 const Design = () => {
   return (
-    <CentralInfo leftImage={left} rightImage={right}>
+    <CentralInfo backgroundImage={background}>
       <div style={{ paddingTop: 0, marginBottom: 0 }}>
         <Heading name="DESIGN" />
         <Divider />
         <Description>
           <p>
-            our design services deliver a distinctive living experience for our
+            our design services <br />deliver a distinctive living <br></br>experience<br /> for our
             customers
           </p>
           <p>
-            our design strategy strives for balance between bespoke solutions
-            and theatric luxury
-          </p>
-          <p>
-            our clients include developers, corporates, entrepreneurs,
-            retailers, and individuals
+            our design strategy strives <br />for balance between<br /> bespoke solutions
+            and <br/>theatric luxury
           </p>
         </Description>
         <Divider />
@@ -53,7 +51,7 @@ const Design = () => {
         </Description>
         <Divider />
         <LinkGroup>
-          <Link to="#">portfolio</Link>
+          <Link to="/dev/portfolio">portfolio</Link>
         </LinkGroup>
       </div>
     </CentralInfo>

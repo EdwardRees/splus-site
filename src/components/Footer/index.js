@@ -20,7 +20,7 @@ const getYear = () => {
 };
 const Footer = () => (
   <div
-    className="text-center"
+    className="text-center fixed-bottom"
     style={{
       display: "flex",
       flexDirection: "column",

@@ -31,15 +31,15 @@ const Us = ({ wip = false }) => {
         </Description>
         <Divider />
         <LinkGroup>
-          <Link to={wip ? "/dev/wip/design" : "#"}>design</Link>
-          <Link to={wip ? "/dev/wip/facilities-management" : "#"}>
+          <Link to={wip ? "/dev/design" : "#"}>design</Link>
+          <Link to={wip ? "/dev/facilities-management" : "#"}>
             facility management
           </Link>
-          <Link to={wip ? "/dev/wip/active-senior-living" : "#"}>
+          <Link to={wip ? "/dev/active-senior-living" : "#"}>
             active senior living
           </Link>
-          <Link to={wip ? "/dev/wip/lifestyle" : "#"}>lifestyle</Link>
-          <Link to={wip ? "/dev/wip/enquiry" : "#"}>enquiry</Link>
+          <Link to={wip ? "/dev/lifestyle" : "#"}>lifestyle</Link>
+          <Link to={wip ? "/dev/enquiry" : "#"}>enquiry</Link>
         </LinkGroup>
       </div>
     </CentralInfo>
