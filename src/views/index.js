@@ -5,5 +5,5 @@ export * from './Enquiry';
 export * from './FacilitiesManagement';
 export * from './Lifestyle';
 export * from './Error404';
-export * from './ImagesSlideshow';
 export * from './Portfolio';
+export * from './LifestylePages'

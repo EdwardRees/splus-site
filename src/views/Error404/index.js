@@ -7,6 +7,7 @@ import {
   LinkGroup,
   CentralInfo
 } from "../../components/";
+import { PORTFOLIO } from '../../constants/routes';
 
 const Error404 = ({ name }) => (
   <CentralInfo>
@@ -21,7 +22,7 @@ const Error404 = ({ name }) => (
       </Description>
       <Divider />
       <LinkGroup>
-        <Link to="#">portfolio</Link>
+        <Link to={`/dev${PORTFOLIO}`}>portfolio</Link>
       </LinkGroup>
     </div>
   </CentralInfo>

@@ -8,11 +8,12 @@ import {
   CentralInfo
 } from "../../components/";
 
-const left = require("../../assets/us/left.png");
-const right = require("../../assets/us/right.png");
+// const left = require("../../assets/us/left.png");
+// const right = require("../../assets/us/right.png");
+const background = require("../../assets/enquiry/background.png")
 
 const VerticalDivider = () => (
-  <span style={{ fontWeight: "bold", color: "#f79646", fontFamily: "Corbel" }}>
+  <span style={{ fontWeight: "bold", color: "#F97646", fontFamily: "Corbel" }}>
     {" "}
     &nbsp;&nbsp;|&nbsp;&nbsp;
   </span>
@@ -20,10 +21,13 @@ const VerticalDivider = () => (
 
 const Enquiry = () => {
   return (
-    <CentralInfo leftImage={left} rightImage={right}>
+    <CentralInfo backgroundImage={background}>
       <div style={{ paddingTop: "10vh", paddingBottom: "20vh" }}>
         <Heading name="Showroom" />
         <Divider />
+        <br />
+        <span style={{fontFamily: "Avenir", color: "#F97646"}}>by appointment only</span>
+        <br />
         <Description>
           <span>unit 1507</span>
           <VerticalDivider />

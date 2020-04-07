@@ -1,0 +1,12 @@
+export const HOME = "/";
+export const US = "/us";
+export const DESIGN = "/design";
+export const FACILITIES_MANAGEMENT = "/facilities-management";
+export const ACTIVE_SENIOR_LIVING = "/active-senior-living";
+export const LIFESTYLE = "/lifestyle";
+export const ART_CONSULTANCY = "/lifestyle/art-consultancy";
+export const FURNITURE_DESIGN = "/lifestyle/furniture-design";
+export const INTERIOR_DESIGN = "/portfolio";
+export const STYLING_AND_FURNISHING = "/lifestyle/styling-and-furnishing";
+export const ENQUIRY = "/enquiry";
+export const PORTFOLIO = "/portfolio";

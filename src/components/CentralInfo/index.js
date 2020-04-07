@@ -31,7 +31,7 @@ const CentralInfo = ({
     return (
       <div
         className="d-flex flex-row text-center row  no-gutters align-items-center justify-content-center"
-        style={{ flex: 1, backgroundImage: `url(${backgroundImage})`, backgroundSize: "cover" }}
+        style={{ flex: 1, backgroundImage: `url(${backgroundImage})`, backgroundSize: "100% 100%"  }}
       >
         <div className="d-flex  col-md-3 text-center">
           <TemplateCenter specificHeight={"auto"}>{children}</TemplateCenter>

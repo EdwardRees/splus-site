@@ -7,13 +7,13 @@ import {
   LinkGroup,
   CentralInfo
 } from "../../components/";
+import {ART_CONSULTANCY, FURNITURE_DESIGN, INTERIOR_DESIGN, STYLING_AND_FURNISHING  } from '../../constants/routes';
 
-const left = require("../../assets/us/left.png");
-const right = require("../../assets/us/right.png");
+const background = require("../../assets/lifestyle/background.png")
 
 const Lifestyle = () => {
   return (
-    <CentralInfo leftImage={left} rightImage={right}>
+    <CentralInfo backgroundImage={background}>
     <div style={{paddingTop: "10vh", paddingBottom: "10vh"}}>
         <Heading name="Lifestyle" />
         <Divider />
@@ -32,10 +32,10 @@ const Lifestyle = () => {
         </p>
         </Description>
         <LinkGroup>
-          <Link to="#" padding={0}>interior design</Link>
-          <Link to="#" padding={0}>art consultancy</Link>
-          <Link to="#" padding={0}>styling and furnishing</Link>
-          <Link to="#" padding={0}>furniture design</Link>
+          <Link to={`/dev${INTERIOR_DESIGN}`} padding={0}>interior design</Link>
+          <Link to={`/dev${ART_CONSULTANCY}`} padding={0}>art consultancy</Link>
+          <Link to={`/dev${STYLING_AND_FURNISHING}`} padding={0}>styling and furnishing</Link>
+          <Link to={`/dev${FURNITURE_DESIGN}`} padding={0}>furniture design</Link>
         </LinkGroup>
     </div>
     </CentralInfo>
