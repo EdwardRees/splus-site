@@ -32,7 +32,7 @@ const Header = () => {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", paddingLeft: 10 }}>
-          {/*<NavLink to="/dev/us">*/}
+          {/*<NavLink to="/us">*/}
           <button className="btn" onClick={toggle}>
             <FaBars color="#F97646" size="2rem" />
           </button>
@@ -65,7 +65,7 @@ const Header = () => {
               <NavLink
                 style={{ color: "#606060" }}
                 className="d-flex p-4"
-                to={`/dev${US}`}
+                to={`${US}`}
                 onClick={toggle}
               >
                 Us
@@ -75,7 +75,7 @@ const Header = () => {
               <NavLink
                 style={{ color: "#606060" }}
                 className="d-flex p-4"
-                to={`/dev${DESIGN}`}
+                to={`${DESIGN}`}
                 onClick={toggle}
               >
                 Design
@@ -85,7 +85,7 @@ const Header = () => {
               <NavLink
                 style={{ color: "#606060" }}
                 className="d-flex p-4"
-                to={`/dev${FACILITIES_MANAGEMENT}`}
+                to={`${FACILITIES_MANAGEMENT}`}
                 onClick={toggle}
               >
                 Facilities Management
@@ -95,7 +95,7 @@ const Header = () => {
               <NavLink
                 style={{ color: "#606060" }}
                 className="d-flex p-4"
-                to={`/dev${ACTIVE_SENIOR_LIVING}`}
+                to={`${ACTIVE_SENIOR_LIVING}`}
                 onClick={toggle}
               >
                 Active Senior Living
@@ -105,7 +105,7 @@ const Header = () => {
               <NavLink
                 style={{ color: "#606060" }}
                 className="d-flex p-4"
-                to={`/dev${LIFESTYLE}`}
+                to={`${LIFESTYLE}`}
                 onClick={toggle}
               >
                 Lifestyle
@@ -115,7 +115,7 @@ const Header = () => {
               <NavLink
                 style={{ color: "#606060" }}
                 className="d-flex p-4"
-                to={`/dev${ENQUIRY}`}
+                to={`${ENQUIRY}`}
                 onClick={toggle}
               >
                 Enquiry

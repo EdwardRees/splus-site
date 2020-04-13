@@ -22,7 +22,7 @@ const Error404 = ({ name }) => (
       </Description>
       <Divider />
       <LinkGroup>
-        <Link to={`/dev${PORTFOLIO}`}>portfolio</Link>
+        <Link to={`${PORTFOLIO}`}>portfolio</Link>
       </LinkGroup>
     </div>
   </CentralInfo>

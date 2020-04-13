@@ -32,10 +32,10 @@ const Lifestyle = () => {
         </p>
         </Description>
         <LinkGroup>
-          <Link to={`/dev${INTERIOR_DESIGN}`} padding={0}>interior design</Link>
-          <Link to={`/dev${ART_CONSULTANCY}`} padding={0}>art consultancy</Link>
-          <Link to={`/dev${STYLING_AND_FURNISHING}`} padding={0}>styling and furnishing</Link>
-          <Link to={`/dev${FURNITURE_DESIGN}`} padding={0}>furniture design</Link>
+          <Link to={`${INTERIOR_DESIGN}`} padding={0}>interior design</Link>
+          <Link to={`${ART_CONSULTANCY}`} padding={0}>art consultancy</Link>
+          <Link to={`${STYLING_AND_FURNISHING}`} padding={0}>styling and furnishing</Link>
+          <Link to={`${FURNITURE_DESIGN}`} padding={0}>furniture design</Link>
         </LinkGroup>
     </div>
     </CentralInfo>

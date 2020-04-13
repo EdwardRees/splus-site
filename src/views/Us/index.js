@@ -23,15 +23,15 @@ const Us = () => {
         </Description>
         <Divider />
         <LinkGroup>
-          <Link to={ "/dev/design"}>design</Link>
-          <Link to={"/dev/facilities-management"}>
+          <Link to={ "/design"}>design</Link>
+          <Link to={"/facilities-management"}>
             facility management
           </Link>
-          <Link to={"/dev/active-senior-living"}>
+          <Link to={"/active-senior-living"}>
             active senior living
           </Link>
-          <Link to={"/dev/lifestyle"}>lifestyle</Link>
-          <Link to={"/dev/enquiry"}>enquiry</Link>
+          <Link to={"/lifestyle"}>lifestyle</Link>
+          <Link to={"/enquiry"}>enquiry</Link>
         </LinkGroup>
       </div>
     </CentralInfo>

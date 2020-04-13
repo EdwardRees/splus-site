@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Divider = () => (
   <span style={{ fontWeight: "bold", color: "#f79646", fontFamily: "Corbel" }}>
@@ -44,7 +45,7 @@ const Footer = () => (
       <Divider />
       <Text>all rights reserved</Text>
       <Divider />
-      <Text>terms and conditions</Text>
+      <Text><Link to="/terms" style={{color: "#606060",}}>terms and conditions</Link></Text>
     </div>
   </div>
   // <Terms />
