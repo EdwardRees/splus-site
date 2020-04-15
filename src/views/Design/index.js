@@ -7,7 +7,7 @@ const background = require("../../assets/design/background.png");
 const Design = () => {
   return (
     <CentralInfo backgroundImage={background}>
-      <div style={{ paddingTop: 0, marginBottom: 0, paddingBottom: 30 }}>
+      <div style={{ paddingTop: 0, marginBottom: 0, paddingBottom: 60 }}>
         <Heading name="DESIGN" />
         <Divider />
         <Description>

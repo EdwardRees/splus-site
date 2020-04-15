@@ -35,6 +35,7 @@ const Terms = () => (
     className="d-flex flex-row text-center row  no-gutters align-items-center justify-content-center"
     style={{
       flex: 1,
+      paddingBottom: 30
     }}
   >
     <div className="d-flex  col-md-5 text-center">

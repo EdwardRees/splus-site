@@ -14,7 +14,7 @@ const background = require("../../assets/lifestyle/background.png")
 const Lifestyle = () => {
   return (
     <CentralInfo backgroundImage={background}>
-    <div style={{paddingTop: "10vh", paddingBottom: "10vh"}}>
+    <div style={{paddingTop: "10vh", paddingBottom: "20vh"}}>
         <Heading name="Lifestyle" />
         <Divider />
         <Description>
