@@ -1,13 +1,13 @@
 import React from "react";
 import { CentralInfo, Description, Divider, Heading, Link, LinkGroup } from "../../components/";
-import { PORTFOLIO } from '../../constants/routes'
+import { PORTFOLIO, DESIGN, ART_CONSULTANCY, STYLING_AND_FURNISHING, FURNITURE_DESIGN } from '../../constants/routes'
 
 const background = require("../../assets/design/background.png");
 
 const Design = () => {
   return (
     <CentralInfo backgroundImage={background}>
-      <div style={{ paddingTop: 0, marginBottom: 0 }}>
+      <div style={{ paddingTop: 0, marginBottom: 0, paddingBottom: 30 }}>
         <Heading name="DESIGN" />
         <Divider />
         <Description>
@@ -23,7 +23,8 @@ const Design = () => {
         <Divider />
         <Description>
           <p>design services include:</p>
-          <span>interior design</span>
+            <Link to={DESIGN}>interior design</Link>
+          
           <br />
           <span>design management</span>
           <br />
@@ -33,17 +34,20 @@ const Design = () => {
           <br />
           <span>project management</span>
           <br />
-          <span>art consultancy</span>
+          
+            <Link to={ART_CONSULTANCY}>art consultancy</Link>
+          
           <br />
-          <span>styling and furnishing</span>
+            <Link to={STYLING_AND_FURNISHING}>styling and furnishing</Link>
           <br />
-          <span>furniture design</span>
+            <Link to={FURNITURE_DESIGN}>furniture design</Link>
           <br />
         </Description>
         <Divider />
         <LinkGroup>
           <Link to={`${PORTFOLIO}`}>portfolio</Link>
         </LinkGroup>
+        <br />
       </div>
     </CentralInfo>
   );

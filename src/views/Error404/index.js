@@ -21,9 +21,10 @@ const Error404 = ({ name }) => (
         </div>
       </Description>
       <Divider />
-      <LinkGroup>
-        <Link to={`${PORTFOLIO}`}>portfolio</Link>
-      </LinkGroup>
+      <Description>
+        <span>portfolio</span>
+      {/*<Link to={`${PORTFOLIO}`}>portfolio</Link>*/}
+      </Description>
     </div>
   </CentralInfo>
 );

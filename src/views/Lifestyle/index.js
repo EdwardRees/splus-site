@@ -7,7 +7,7 @@ import {
   LinkGroup,
   CentralInfo
 } from "../../components/";
-import {ART_CONSULTANCY, FURNITURE_DESIGN, INTERIOR_DESIGN, STYLING_AND_FURNISHING  } from '../../constants/routes';
+import {ART_CONSULTANCY, FURNITURE_DESIGN, INTERIOR_DESIGN,  DESIGN, STYLING_AND_FURNISHING  } from '../../constants/routes';
 
 const background = require("../../assets/lifestyle/background.png")
 
@@ -32,7 +32,7 @@ const Lifestyle = () => {
         </p>
         </Description>
         <LinkGroup>
-          <Link to={`${INTERIOR_DESIGN}`} padding={0}>interior design</Link>
+          <Link to={`${DESIGN}`} padding={0}>interior design</Link>
           <Link to={`${ART_CONSULTANCY}`} padding={0}>art consultancy</Link>
           <Link to={`${STYLING_AND_FURNISHING}`} padding={0}>styling and furnishing</Link>
           <Link to={`${FURNITURE_DESIGN}`} padding={0}>furniture design</Link>
