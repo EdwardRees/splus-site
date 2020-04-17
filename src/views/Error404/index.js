@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Description,
-  Divider,
-  Heading,
-  Link,
-  LinkGroup,
-  CentralInfo
-} from "../../components/";
-import { PORTFOLIO } from '../../constants/routes';
+import { CentralInfo, Description, Divider, Heading } from "../../components/";
 
 const Error404 = ({ name }) => (
   <CentralInfo>
@@ -29,3 +21,4 @@ const Error404 = ({ name }) => (
   </CentralInfo>
 );
 export { Error404 };
+

@@ -1,55 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Footer, Header, Logo } from "./components/";
-import {
-  ACTIVE_SENIOR_LIVING,
-  ART_CONSULTANCY,
-  DESIGN,
-  ENQUIRY,
-  FACILITIES_MANAGEMENT,
-  FURNITURE_DESIGN,
-  HOME,
-  LIFESTYLE,
-  PORTFOLIO,
-  STYLING_AND_FURNISHING,
-  TERMS,
-  US,
-} from "./constants/routes";
-import {
-  ActiveSeniorLiving,
-  ArtConsultancy,
-  Design,
-  Enquiry,
-  Error404,
-  FacilitiesManagement,
-  FurnitureDesign,
-  Lifestyle,
-  Portfolio,
-  StylingAndFurnishing,
-  Terms,
-  Us,
-} from "./views";
+import { Footer, Header } from "./components/";
+import { ACTIVE_SENIOR_LIVING, ART_CONSULTANCY, DESIGN, ENQUIRY, FACILITIES_MANAGEMENT, FURNITURE_DESIGN, HOME, LIFESTYLE, PORTFOLIO, STYLING_AND_FURNISHING, TERMS, US } from "./constants/routes";
+import { ActiveSeniorLiving, ArtConsultancy, Design, Enquiry, Error404, FacilitiesManagement, FurnitureDesign, Lifestyle, Portfolio, StylingAndFurnishing, Terms, Us } from "./views";
 
-const InProgress = () => {
-  return (
-    <div
-      className="text-center"
-      style={{
-        display: "flex",
-        flex: 1,
-        minHeight: window.innerHeight,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <h1 style={{ fontWeight: "bold" }}>
-        The <Logo WIP /> site is currently under renovation.
-        <br />
-        Please come back later!
-      </h1>
-    </div>
-  );
-};
 const Directory = () => (
   <div style={{ display: "flex", flexDirection: "column", minHeight: "100%" }}>
     <Router>
@@ -101,3 +55,4 @@ const Directory = () => (
 );
 
 export { Directory };
+

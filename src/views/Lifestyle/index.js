@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Description,
-  Divider,
-  Heading,
-  Link,
-  LinkGroup,
-  CentralInfo
-} from "../../components/";
-import {ART_CONSULTANCY, FURNITURE_DESIGN, INTERIOR_DESIGN,  DESIGN, STYLING_AND_FURNISHING  } from '../../constants/routes';
+import { CentralInfo, Description, Divider, Heading, Link, LinkGroup } from "../../components/";
+import { ART_CONSULTANCY, DESIGN, FURNITURE_DESIGN, STYLING_AND_FURNISHING } from '../../constants/routes';
 
 const background = require("../../assets/lifestyle/background.png")
 
@@ -43,3 +36,4 @@ const Lifestyle = () => {
 };
 
 export { Lifestyle };
+
