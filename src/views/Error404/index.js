@@ -13,10 +13,6 @@ const Error404 = ({ name }) => (
         </div>
       </Description>
       <Divider />
-      <Description>
-        <span>portfolio</span>
-      {/*<Link to={`${PORTFOLIO}`}>portfolio</Link>*/}
-      </Description>
     </div>
   </CentralInfo>
 );
