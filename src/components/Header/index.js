@@ -20,91 +20,90 @@ const Header = () => {
   const Menu = () => {
     return (
       <Drawer open={open} onClose={toggle}>
-          <div
-            className="d-flex flex-column p-2"
-            style={{
-              height: window.outerHeight,
-              width: "18em",
-              backgroundColor: "#e7e6e6",
-            }}
+        <div
+          className="d-flex flex-column p-2"
+          style={{
+            height: window.outerHeight,
+            width: "18em",
+            backgroundColor: "#e7e6e6",
+          }}
+        >
+          <button
+            className="btn d-flex justify-content-end"
+            style={{}}
+            onClick={toggle}
           >
-            <button
-              className="btn d-flex justify-content-end"
-              style={{}}
-              onClick={toggle}
-            >
-              <MdClose color="#F97646" size="2rem" />
-            </button>
-            <div
-              className="d-flex flex-column justify-content-between align-items-center align-content-between"
-              style={{ backgroundColor: "#e7e6e6" }}
-            >
-              <div>
-                <NavLink
-                  style={{ color: "#606060" }}
-                  className="d-flex p-4"
-                  to={`${US}`}
-                  onClick={toggle}
-                >
-                  Us
-                </NavLink>
-              </div>
-              <div>
-                <NavLink
-                  style={{ color: "#606060" }}
-                  className="d-flex p-4"
-                  to={`${DESIGN}`}
-                  onClick={toggle}
-                >
-                  Design
-                </NavLink>
-              </div>
-              <div>
-                <NavLink
-                  style={{ color: "#606060" }}
-                  className="d-flex p-4"
-                  to={`${FACILITIES_MANAGEMENT}`}
-                  onClick={toggle}
-                >
-                  Facilities Management
-                </NavLink>
-              </div>
-              <div>
-                <NavLink
-                  style={{ color: "#606060" }}
-                  className="d-flex p-4"
-                  to={`${ACTIVE_SENIOR_LIVING}`}
-                  onClick={toggle}
-                >
-                  Active Senior Living
-                </NavLink>
-              </div>
-              <div>
-                <NavLink
-                  style={{ color: "#606060" }}
-                  className="d-flex p-4"
-                  to={`${LIFESTYLE}`}
-                  onClick={toggle}
-                >
-                  Lifestyle
-                </NavLink>
-              </div>
-              <div>
-                <NavLink
-                  style={{ color: "#606060" }}
-                  className="d-flex p-4"
-                  to={`${ENQUIRY}`}
-                  onClick={toggle}
-                >
-                  Enquiry
-                </NavLink>
-              </div>
+            <MdClose color="#F97646" size="2rem" />
+          </button>
+          <div
+            className="d-flex flex-column justify-content-between align-items-center align-content-between"
+            style={{ backgroundColor: "#e7e6e6" }}
+          >
+            <div>
+              <NavLink
+                style={{ color: "#606060" }}
+                className="d-flex p-4"
+                to={`${US}`}
+                onClick={toggle}
+              >
+                Us
+              </NavLink>
+            </div>
+            <div>
+              <NavLink
+                style={{ color: "#606060" }}
+                className="d-flex p-4"
+                to={`${DESIGN}`}
+                onClick={toggle}
+              >
+                Design
+              </NavLink>
+            </div>
+            <div>
+              <NavLink
+                style={{ color: "#606060" }}
+                className="d-flex p-4"
+                to={`${FACILITIES_MANAGEMENT}`}
+                onClick={toggle}
+              >
+                Facilities Management
+              </NavLink>
+            </div>
+            <div>
+              <NavLink
+                style={{ color: "#606060" }}
+                className="d-flex p-4"
+                to={`${ACTIVE_SENIOR_LIVING}`}
+                onClick={toggle}
+              >
+                Active Senior Living
+              </NavLink>
+            </div>
+            <div>
+              <NavLink
+                style={{ color: "#606060" }}
+                className="d-flex p-4"
+                to={`${LIFESTYLE}`}
+                onClick={toggle}
+              >
+                Lifestyle
+              </NavLink>
+            </div>
+            <div>
+              <NavLink
+                style={{ color: "#606060" }}
+                className="d-flex p-4"
+                to={`${ENQUIRY}`}
+                onClick={toggle}
+              >
+                Enquiry
+              </NavLink>
             </div>
           </div>
-        </Drawer>
-    )
-  
-  }
+        </div>
+      </Drawer>
+    );
+  };
 
   return (
     <Fragment>
@@ -125,10 +124,10 @@ const Header = () => {
             <FaBars color="#F97646" size="2rem" />
           </button>
         </div>
-        <NavLink to="/" style={{textDecorationLine: "none"}}>
+        <NavLink to="/" style={{ textDecorationLine: "none" }}>
           <Logo size={2} />
         </NavLink>
-        <div style={{width: "3rem"}}/>
+        <div style={{ width: "3rem" }} />
       </div>
       <Menu />
     </Fragment>
