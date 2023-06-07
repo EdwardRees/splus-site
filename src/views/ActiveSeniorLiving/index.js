@@ -5,8 +5,10 @@ const first_responder_kit = require("../../assets/pdfs/HK First Responder v4 (CH
 const home_safety_cn = require("../../assets/pdfs/S+ Home Safety Checklist v4 (CN).pdf");
 const home_safety_en = require("../../assets/pdfs/S+ Home Safety Checklist v4 (eng).pdf");
 
+const background = require("../../assets/design/background.png");
+
 const ActiveSeniorLiving = () => (
-  <CentralInfo>
+  <CentralInfo backgroundImage={background}>
     <div style={{ paddingTop: 0, marginBottom: 0, paddingBottom: 60 }}>
       <Heading name="Active Senior Living" />
       <Divider />

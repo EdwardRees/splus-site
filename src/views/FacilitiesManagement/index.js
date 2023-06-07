@@ -8,9 +8,10 @@ import {
   LinkGroup,
 } from "../../components/";
 import { PORTFOLIO } from "../../constants/routes";
+const background = require("../../assets/design/background.png");
 
 const FacilitiesManagement = () => (
-  <CentralInfo>
+  <CentralInfo backgroundImage={background}>
     <div style={{ paddingTop: 0, marginBottom: 0, paddingBottom: 60 }}>
       <Heading name="Facilities management" />
       <Divider />
