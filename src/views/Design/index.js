@@ -1,6 +1,19 @@
 import React from "react";
-import { CentralInfo, Description, Divider, Heading, Link, LinkGroup } from "../../components/";
-import { PORTFOLIO, DESIGN, ART_CONSULTANCY, STYLING_AND_FURNISHING, FURNITURE_DESIGN } from '../../constants/routes'
+import {
+  CentralInfo,
+  Description,
+  Divider,
+  Heading,
+  Link,
+  LinkGroup,
+} from "../../components/";
+import {
+  PORTFOLIO,
+  DESIGN,
+  ART_CONSULTANCY,
+  STYLING_AND_FURNISHING,
+  FURNITURE_DESIGN,
+} from "../../constants/routes";
 
 const background = require("../../assets/design/background.png");
 
@@ -12,19 +25,22 @@ const Design = () => {
         <Divider />
         <Description>
           <p>
-            our design services <br />deliver a distinctive living <br></br>experience<br /> for our
-            customers
+            our design services <br />
+            deliver a distinctive living <br></br>experience
+            <br /> for our customers
           </p>
           <p>
-            our design strategy strives <br />for balance between<br /> bespoke solutions
-            and <br/>theatric luxury
+            our design strategy strives <br />
+            for balance between
+            <br /> bespoke solutions and <br />
+            theatric luxury
           </p>
         </Description>
         <Divider />
         <Description>
           <p>design services include:</p>
-            <Link to={DESIGN}>interior design</Link>
-          
+          <Link to={DESIGN}>interior design</Link>
+
           <br />
           <span>design management</span>
           <br />
@@ -34,13 +50,13 @@ const Design = () => {
           <br />
           <span>project management</span>
           <br />
-          
-            <Link to={ART_CONSULTANCY}>art consultancy</Link>
-          
+
+          <Link to={ART_CONSULTANCY}>art consultancy</Link>
+
           <br />
-            <Link to={STYLING_AND_FURNISHING}>styling and furnishing</Link>
+          <Link to={STYLING_AND_FURNISHING}>styling and furnishing</Link>
           <br />
-            <Link to={FURNITURE_DESIGN}>furniture design</Link>
+          <Link to={FURNITURE_DESIGN}>furniture design</Link>
           <br />
         </Description>
         <Divider />
@@ -54,4 +70,3 @@ const Design = () => {
 };
 
 export { Design };
-
